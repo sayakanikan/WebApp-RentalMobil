@@ -81,7 +81,7 @@ $db['default'] = array(
 	'username' => $url["yjbomztjvknxvu"],
 	'password' => $url["f96c8c58f4fc109dad54553651458796a9138403f8cad5616975bcb07cc4946d"],
 	'database' => substr($url["dcgteagkte60if"], 1),
-	'dbdriver' => 'pgsql',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
