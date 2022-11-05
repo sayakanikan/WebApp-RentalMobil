@@ -73,13 +73,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+$url = parse_url(getenv("postgres://yjbomztjvknxvu:f96c8c58f4fc109dad54553651458796a9138403f8cad5616975bcb07cc4946d@ec2-3-229-161-70.compute-1.amazonaws.com:5432/dcgteagkte60if"));
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'rental_mobil',
-	'dbdriver' => 'mysqli',
+	'hostname' => $url["ec2-3-229-161-70.compute-1.amazonaws.com"],
+	'username' => $url["yjbomztjvknxvu"],
+	'password' => $url["f96c8c58f4fc109dad54553651458796a9138403f8cad5616975bcb07cc4946d"],
+	'database' => substr($url["dcgteagkte60if"], 1),
+	'dbdriver' => 'pgsql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
