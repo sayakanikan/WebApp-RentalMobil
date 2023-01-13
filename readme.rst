@@ -8,7 +8,7 @@ ini dikembangkan dengan harapan dapat menambah jangkauan pasar dari suatu
 jasa rental mobil.
 
 *******************
-Apa yang dilakukan aplikasi ini?
+Fitur aplikasi
 *******************
 
 🚙 Pengelolaan berbagai macam mobil untuk disewakan
@@ -22,3 +22,13 @@ Apa yang dilakukan aplikasi ini?
 📈 Pencatatan riwayat transaksi dari waktu ke waktu
 
 📝 Invoice yang tergenerate instan setelah pemesanan
+
+*******************
+Catatan
+*******************
+Untuk mengakses halaman admin dapat login menggunakan
+
+
+Username : admin
+
+Password : 123
